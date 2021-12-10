@@ -64,6 +64,7 @@ public class BeginingScreen extends JFrame {
 
    /**
     * Create the frame.
+    * 
     */
    public BeginingScreen() {
 	  setVisible(true);
