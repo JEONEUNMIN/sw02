@@ -1,5 +1,6 @@
 package Yang;
 import java.awt.BorderLayout;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -93,9 +94,10 @@ public class FoodRegistScreen extends JFrame {
 		JButton registbtn = new JButton("\uB4F1\uB85D");
 		registbtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				FoodDAO reg=new FoodDAO();
-	      		boolean b =reg.FoodReg(fname.getText(),fdeadline.getText(),fprice.getText(),clink.getText());
-	      		if(b==true) {
+				FoodDAO reg=new FoodDAO();		//FoodDAO 객체생성
+	      		boolean b =reg.FoodReg(BeginingScreen.conId,fname.getText(),fdeadline.getText(),fprice.getText(),clink.getText(),BeginingScreen.conRegion);
+	      		//boolean b 란 정상적인 입력을 마치고 성공적은 실행을했다면 true를 받음
+	      		if(b==true) {	//위 실행을 마치고 정상적이라면 해당 창을 닫고 메인화면으로 복귀
 	      		setVisible(false);
 	      		MainScreen msc=new MainScreen();
 	      		}

@@ -75,8 +75,8 @@ public class RecentRegistFoodScreen extends JFrame {
 		editbtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				FoodDAO fupd=new FoodDAO();
-				boolean b=fupd.FoodUpd(foodname.getText(), fooddeadline.getText(), foodprice.getText(), chatlink.getText());
-				if(b==true) {
+				boolean b=fupd.FoodUpd(BeginingScreen.conId,foodname.getText(), fooddeadline.getText(), foodprice.getText(), chatlink.getText());
+				if(b==true) { // 정상적인 전달을 받고 실행을했다면 화면을 닫음
 					setVisible(false);
 				}
 			}

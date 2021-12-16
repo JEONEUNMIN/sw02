@@ -1,6 +1,7 @@
 package Yang;
 import java.awt.BorderLayout;
 
+
 import java.awt.EventQueue;
 import java.io.*; 
 import java.lang.*; 
@@ -21,12 +22,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-
-import Yang.DBconnect;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class MembershipScreen extends JFrame {
+	
 
    private JPanel membership;
    private JTextField textField;

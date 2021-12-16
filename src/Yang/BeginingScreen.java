@@ -1,10 +1,12 @@
 package Yang;
 
-import java.awt.BorderLayout;
-
-
-
-import java.awt.EventQueue;
+//import java.awt.BorderLayout;
+//
+//
+//
+//
+//
+//import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -13,24 +15,24 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Properties;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.ResultSet;
+//import java.sql.SQLException;
+//import java.sql.Statement;
+//import java.util.Properties;
 import java.awt.event.ActionEvent;
-import javax.swing.SwingConstants;
+//import javax.swing.SwingConstants;
 import javax.swing.JLayeredPane;
-import javax.swing.JOptionPane;
-import javax.swing.JCheckBox;
+//import javax.swing.JOptionPane;
+//import javax.swing.JCheckBox;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
-import java.awt.TextField;
+//import java.awt.TextField;
 import java.awt.Color;
-import java.awt.SystemColor;
+//import java.awt.SystemColor;
 import java.awt.Font;
 import javax.swing.UIManager;
 
@@ -46,9 +48,7 @@ public class BeginingScreen extends JFrame {
    static boolean conType = true;
    
    
-   /**
-    * Launch the application.
-    */
+ 
 //   public static void main(String[] args) {
 //      EventQueue.invokeLater(new Runnable() {
 //         public void run() {
@@ -62,10 +62,6 @@ public class BeginingScreen extends JFrame {
 //      });
 //   }
 
-   /**
-    * Create the frame.
-    * 
-    */
    public BeginingScreen() {
 	  setVisible(true);
       setTitle("식재료 중고거래");
@@ -127,7 +123,7 @@ public class BeginingScreen extends JFrame {
       
       JRadioButton sellbtn = new JRadioButton("\uD310\uB9E4\uC790",true);
       sellbtn.addActionListener(new ActionListener() {
-      	public void actionPerformed(ActionEvent arg0) {
+      	public void actionPerformed(ActionEvent arg0) {		//판매자 구매자 버튼 인식으로 값을 넘겨줌
       		conType=true;
       	}
       });
@@ -138,7 +134,7 @@ public class BeginingScreen extends JFrame {
       
       JRadioButton consbtn = new JRadioButton("\uAD6C\uB9E4\uC790",false);
       consbtn.addActionListener(new ActionListener() {
-      	public void actionPerformed(ActionEvent arg0) {
+      	public void actionPerformed(ActionEvent arg0) {	//판매자 구매자 버튼 인식으로 값을 넘겨줌
       		conType=false;
       	}
       });

@@ -53,7 +53,7 @@ public class MypageScreen extends JFrame {
 				//RecentRegistFoodScreen rrfc=new RecentRegistFoodScreen();
 				FoodDAO cfdao=new FoodDAO();
 				cfdao.RecentFood(BeginingScreen.conId);
-				if(FoodDAO.rfname.isEmpty()) {
+				if(FoodDAO.rfname.isEmpty()) {	// 전달받은 아이디를 sql문을 통해 검색후 값이 없다면 에러메시지 출력
 					JOptionPane.showMessageDialog(null, "등록된 상품이없습니다!");
 				}
 				else {
